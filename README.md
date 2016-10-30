@@ -38,7 +38,14 @@ entry: ['whatwg-fetch', ...]
 For babel and es2015+, make sure to import the file:
 
 ```javascript
-import 'whatwg-fetch';
+import 'whatwg-fetch/auto';
+fetch(...);
+```
+
+or
+
+```javascript
+require('whatwg-fetch/auto').polyfill();
 fetch(...);
 ```
 
